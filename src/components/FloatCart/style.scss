@@ -4,7 +4,7 @@
   right: -450px;
   width: 450px;
   height: 100%;
-  background-color: #1b1a20;
+  background-color: #A17A69;
   box-sizing: border-box;
 
   transition: right 0.2s;
@@ -16,17 +16,18 @@
   &__close-btn {
     width: 50px;
     height: 50px;
-    color: #ececec;
-    background-color: #1b1a20;
+    color: #EBCDC3;
+    background-color: #A17A69;
     text-align: center;
     line-height: 50px;
     position: absolute;
     top: 0;
     left: -50px;
     cursor: pointer;
+    
 
     &:hover {
-      background-color: #212027;
+      background-color: #A17A69;
     }
   }
 
@@ -35,7 +36,7 @@
     height: 40px;
     position: relative;
     display: inline-block;
-    vertical-align: middle;
+   
     margin-right: 15px;
     background-image: url('../../static/bag-icon.png');
     background-repeat: no-repeat;
@@ -44,7 +45,7 @@
 
     &--float-cart-closed {
       position: absolute;
-      background-color: #000;
+      background-color: #CEAA9A;
       background-size: 50%;
       left: -60px;
       width: 60px;
@@ -61,13 +62,13 @@
       display: inline-block;
       width: 18px;
       height: 18px;
-      color: #0c0b10;
+      color: #A17A69;
       font-weight: bold;
       font-size: 0.7em;
       text-align: center;
       line-height: 18px;
       border-radius: 50%;
-      background-color: #eabf00;
+      background-color: #E8D8D5;
       position: absolute;
       bottom: -5px;
       right: 0px;
@@ -75,7 +76,7 @@
   }
 
   &__header {
-    color: #ececec;
+    color: #A17A69;
     box-sizing: border-box;
     text-align: center;
     padding: 45px 0;
@@ -93,7 +94,7 @@
     padding-bottom: 200px;
 
     .shelf-empty {
-      color: #ececec;
+      color: #B5927F;
       text-align: center;
       line-height: 40px;
     }
@@ -106,7 +107,7 @@
       transition: background-color 0.2s, opacity 0.2s;
 
       &::before {
-        content: '';
+       /*  content: ''; */
         width: 90%;
         height: 2px;
         background-color: rgba(0, 0, 0, 0.2);
@@ -116,7 +117,7 @@
       }
 
       &--mouseover {
-        background: #0c0b10;
+        background: #B5927F;
         .shelf-item__details {
           .title,
           .desc {
@@ -180,7 +181,7 @@
         }
       }
       &__price {
-        color: #eabf00;
+        color: #000;
         text-align: right;
         width: 25%;
       }
@@ -206,7 +207,7 @@
     width: 100%;
     height: 200px;
     z-index: 2;
-    background-color: #1b1a20;
+    background-color: #A17A69;
 
     &::before {
       content: '';
@@ -221,7 +222,8 @@
 
     .sub,
     .sub-price {
-      color: #5b5a5e;
+      color: #000;
+      font-weight: bold;
       vertical-align: middle;
       display: inline-block;
     }
@@ -240,15 +242,16 @@
       }
 
       &__val {
-        color: #eabf00;
+        color: #000;
+        font-weight: bold;
         font-size: 22px;
       }
     }
 
     .buy-btn {
-      color: #ececec;
+      color: #0c0c0c;
       text-transform: uppercase;
-      background-color: #0c0b10;
+      background-color: #DABCB2;
       text-align: center;
       padding: 15px 0;
       margin-top: 40px;
@@ -257,7 +260,7 @@
       transition: background-color 0.2s;
 
       &:hover {
-        background-color: #000;
+        background-color: #B5927F;
       }
     }
   }
@@ -269,12 +272,12 @@
   .float-cart__content::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 10px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(221, 101, 101, 0.2);
     padding: 10px;
   }
   .float-cart__content::-webkit-scrollbar-thumb {
     border-radius: 4px;
-    background-color: #0c0b10;
+    background-color: #0c0c0c;
   }
 }
 

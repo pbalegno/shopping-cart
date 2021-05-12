@@ -156,14 +156,14 @@ class FloatCart extends Component {
             {products}
             {!products.length && (
               <p className="shelf-empty">
-                Add some products in the cart <br />
+                Vamos de compras! <br />
                 :)
               </p>
             )}
           </div>
 
           <div className="float-cart__footer">
-            <div className="sub">SUBTOTAL</div>
+            <div className="sub">TOTAL</div>
             <div className="sub-price">
               <p className="sub-price__val">
                 {`${cartTotal.currencyFormat} ${formatPrice(
@@ -171,7 +171,7 @@ class FloatCart extends Component {
                   cartTotal.currencyId
                 )}`}
               </p>
-              <small className="sub-price__installment">
+              {/* <small className="sub-price__installment">
                 {!!cartTotal.installments && (
                   <span>
                     {`OR UP TO ${cartTotal.installments} x ${
@@ -182,10 +182,10 @@ class FloatCart extends Component {
                     )}`}
                   </span>
                 )}
-              </small>
+              </small> */}
             </div>
             <div onClick={() => this.proceedToCheckout()} className="buy-btn">
-              Checkout
+              Enviar
             </div>
           </div>
         </div>

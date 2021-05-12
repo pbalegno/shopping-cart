@@ -11,7 +11,7 @@ const Product = ({ product, addProduct }) => {
 
   let formattedPrice = formatPrice(product.price, product.currencyId);
 
-  let productInstallment;
+ /*  let productInstallment;
 
   if (!!product.installments) {
     const installmentPrice = product.price / product.installments;
@@ -25,7 +25,7 @@ const Product = ({ product, addProduct }) => {
         </b>
       </div>
     );
-  }
+  } */
 
   return (
     <div
@@ -33,9 +33,9 @@ const Product = ({ product, addProduct }) => {
       onClick={() => addProduct(product)}
       data-sku={product.sku}
     >
-      {product.isFreeShipping && (
+    {/*   {product.isFreeShipping && (
         <div className="shelf-stopper">Free shipping</div>
-      )}
+      )} */}
       <Thumb
         classes="shelf-item__thumb"
         src={require(`../../../../static/products/${product.sku}_1.jpg`)}
@@ -48,9 +48,9 @@ const Product = ({ product, addProduct }) => {
           <b>{formattedPrice.substr(0, formattedPrice.length - 3)}</b>
           <span>{formattedPrice.substr(formattedPrice.length - 3, 3)}</span>
         </div>
-        {productInstallment}
+       {/*  {productInstallment} */}
       </div>
-      <div className="shelf-item__buy-btn">Add to cart</div>
+      <div className="shelf-item__buy-btn">Agregar</div>
     </div>
   );
 };

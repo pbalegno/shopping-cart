@@ -8,11 +8,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #E8D8D5;
 }
 
 body {
   margin: 0;
-  color: #1b1a20;
+  color: #050505;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -22,6 +23,34 @@ main {
   max-width: 1200px;
   margin: 50px auto 0 auto;
 }
+
+
+header {
+  background-color: #CEAA9A;
+  padding: 1.5rem;
+  font-weight: bold;
+  font-size: 1.4em;
+  vertical-align: middle;
+
+}
+
+a:hover {
+  color: #E8D8D5;
+}
+
+header a {
+  color: #E8D8D5;
+  text-decoration: none;
+}
+
+
+footer {
+  background-color: #CEAA9A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 @media only screen and (max-width: 1024px) {
   body {
@@ -70,7 +99,7 @@ main {
       &__close-btn {
         left: 0px;
         z-index: 2;
-        background-color: #1b1a20;
+        background-color: #B5927F;
       }
 
       &__header {
